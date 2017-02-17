@@ -1,49 +1,11 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Graph Visualization of React Components</title>
-    <style type="text/css">
-      body {
-        margin: 0;
-      }
-      #container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-    <link href="./vis.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="./vis.js"></script>
-  </head>
-  <body>
-    <div id="container"></div>
-    <script>
-      <!-- webpack-react-graph -->
-      var container = document.getElementById('container');
-      var data = {
-        nodes: new vis.DataSet(nodes),
-        edges: new vis.DataSet(edges)
-      };
-      var options = {
-        nodes: {
-          borderWidth: 1,
-          font: {
-            color: '#fff',
-            size: 20
-          }
-        },
-        interaction: {
-          hover: true
-        },
-        layout: {
-          improvedLayout:true,
-          hierarchical: {
-            direction: 'UD',
-            levelSeparation: 500
-          }
-        }
-      }
-      var network = new vis.Network(container, data, options);
-    </script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root" style="height:300px"></div>
+</body>
+<script src = "./index.js"></script>
 </html>
